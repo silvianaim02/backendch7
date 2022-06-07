@@ -1,5 +1,6 @@
 const router = require("express").Router();
 const passport = require("passport");
+const cors = require("cors");
 
 const CLIENT_URL = "https://clientch7.herokuapp.com";
 
