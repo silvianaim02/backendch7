@@ -36,7 +36,6 @@ app.use(
   cors({
     origin: "https://clientch7.herokuapp.com",
     methods: "GET,POST,PUT,DELETE",
-    optionsSuccessStatus: 200, // for some legacy browsers
     credentials: true,
   })
 );
