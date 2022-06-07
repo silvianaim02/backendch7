@@ -34,7 +34,7 @@ app.use(passport.session());
 
 app.use(
   cors({
-    origin: "https://clientch7.netlify.app",
+    origin: "https://clientch7.herokuapp.com",
     methods: "GET,POST,PUT,DELETE",
     credentials: true,
   })
