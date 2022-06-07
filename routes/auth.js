@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const passport = require("passport");
 
-const CLIENT_URL = "https://clientch7.netlify.app";
+const CLIENT_URL = "https://clientch7.herokuapp.com";
 
 router.get("/login/success", (req, res) => {
   if (req.user) {
