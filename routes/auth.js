@@ -3,6 +3,14 @@ const passport = require("passport");
 
 const CLIENT_URL = "https://clientch7.herokuapp.com";
 
+router.use(
+  cors({
+    origin: "https://clientch7.herokuapp.com",
+    methods: "GET,POST,PUT,DELETE",
+    credentials: true,
+  })
+);
+
 router.get("/login/success", (req, res) => {
   if (req.user) {
     res.status(200).json({
